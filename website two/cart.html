@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim - E-Ticaret Mağazası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <header>
+        <nav>
+            <div class="logo">E-Mağaza</div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="products.html">Ürünler</a></li>
+                <li><a href="login.html">Giriş Yap</a></li>
+                <li><a href="register.html">Kayıt Ol</a></li>
+                <li><a href="cart.html" id="cart">Sepet (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>Sepetim</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Sepet öğeleri buraya dinamik olarak eklenecek -->
+            </div>
+            <div class="cart-summary">
+                <div class="total">
+                    <span>Toplam:</span>
+                    <span id="cart-total">0.00 TL</span>
+                </div>
+                <button id="checkout-button" class="checkout-button" onclick="window.location.href='checkout.html'">Ödemeye Geç</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hakkımızda</h3>
+                <p>En kaliteli ürünleri en uygun fiyatlarla sunuyoruz. Müşteri memnuniyeti bizim önceliğimizdir.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="#">Kampanyalar</a></li>
+                    <li><a href="#">Yeni Ürünler</a></li>
+                    <li><a href="#">İndirimli Ürünler</a></li>
+                    <li><a href="#">Müşteri Hizmetleri</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <ul>
+                    <li>📞 0850 123 45 67</li>
+                    <li>📧 info@emagaza.com</li>
+                    <li>📍 İstanbul, Türkiye</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Bizi Takip Edin</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-Ticaret Mağazası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
